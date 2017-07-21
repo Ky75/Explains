@@ -7,7 +7,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
 
-class ChangeGamemode extends PluginBase{
+class Gamemode extends PluginBase{
 //if ppugin enable
 public function omEnable(){
 $this->getLogger()->info("Plugin Enable");
@@ -17,6 +17,7 @@ public function onCommand(CommandSender $sender, Command $cmd, $lable, array $ar
 switch($cmd->getName()){
 case 'gmc':
 $sender->setGamemode(1); //replace 1 to you want change gamemode
+$sender->sendMessage("Change Your Gamemode to 1");
   }
  }
 }
