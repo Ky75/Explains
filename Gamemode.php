@@ -13,7 +13,7 @@ public function omEnable(){
 $this->getLogger()->info("Plugin Enable");
 }
 //comand 
-public function onCommand(CommandSender $sender, Command $cmd, $lable, array $args){
+public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 switch($cmd->getName()){
 case 'gmc':
 $sender->setGamemode(1); //replace 1 to you want change gamemode
