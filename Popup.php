@@ -17,3 +17,6 @@ public function onCommand(CommandSender $sender, Command $cmd, $lable, array $ar
 switch($cmd->getName()){
 case 'popup':
 $sender->sendPopup("Popup Message");
+  }
+ }
+}
