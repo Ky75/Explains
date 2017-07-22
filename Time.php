@@ -13,7 +13,7 @@ public function onEnable(){
 $this->getLogger()->info("Plugin Enable");
 }
 
-public function onCommand(CommandSender $sender, Command $cmd, $lable, array $args){
+public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 switch($cmd->getName()){
 case 'day':
 $sender->getLevel()->setTime(day);
