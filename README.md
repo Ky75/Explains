@@ -1,2 +1,2 @@
-# Explaineds
-Codes and Explained for New programmers Enjoy :D
+# Explains
+Codes and Explains for New programmers Enjoy :D
