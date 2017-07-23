@@ -15,8 +15,8 @@ $this->getLogger()->info("Plugin Enable");
 
 public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 switch($cmd->getName()){
-case 'hi':
-$this->getServer()->sendbroadcastMessage("Hi");
+ case 'hi':
+ $this->getServer()->sendbroadcastMessage("Hi");
   }
  }
 }
