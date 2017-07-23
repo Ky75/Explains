@@ -15,8 +15,8 @@ $thid->getLogger()->info("Plugin Enable");
 
 public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 switch($cmd->getName()){
-case 'clear':
-$sender->getInventory()->clearAll();
+ case 'clear':
+ $sender->getInventory()->clearAll();
   }
  }
 }
