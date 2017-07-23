@@ -15,11 +15,11 @@ $this->getLogger()->info("Plugin Enable");
 
 public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 switch($cmd->getName()){
-case 'day':
-$sender->getLevel()->setTime(day);
-break;
-case 'night':
-$sender->getLevel()->setTime(night);
+ case 'day':
+ $sender->getLevel()->setTime(day);
+ break;
+ case 'night':
+ $sender->getLevel()->setTime(night);
   }
  }
 }
