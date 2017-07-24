@@ -8,7 +8,7 @@ use pocketmine\command\CommandSender;
 
 class Gamemode extends PluginBase{
   //if plugin enable
-  public function omEnable(){
+  public function onEnable(){
     $this->getLogger()->info("Plugin Enable");
   }
   //command 
