@@ -5,18 +5,17 @@ namespace InventoryClear;
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\Player;
 
 class InventoryClear extends PluginBase{
 
-public function onEnbale(){
-$thid->getLogger()->info("Plugin Enable");
-}
-
-public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-switch($cmd->getName()){
- case 'clear':
- $sender->getInventory()->clearAll();
+  public function onEnbale(){
+    $this->getLogger()->info("Plugin Enable");
   }
- }
+
+  public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+    switch($cmd->getName()){
+      case 'clear':
+       $sender->getInventory()->clearAll();
+    }
+  }
 }
