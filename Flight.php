@@ -15,7 +15,7 @@ class Flight extends PluginBase{
   public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
     switch($cmd->getName()){
       case 'flight':
-        $sender->setAllowFlight(true); //or false if you eant disable flight
+        $sender->setAllowFlight(true); //or false if you want disable flight
     }
   }
 }
