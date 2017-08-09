@@ -15,7 +15,7 @@ class SignChangeEvent extends PluginBase implements Listener{
   }
   
   public function onChange(SignChangeEvent $event){ // this code for change sgin text1 to text2
-    if($event->getLine(0) === "hi world"){
+    if($event->getLine(0) === "hi world"){ // if Player type in line 0 (hi world) change sign to $e->setLine...
       $e->setLine(0, "Hi");
       $e->setLine(1, $name);
       $e->setLine(2, "Welcome");
