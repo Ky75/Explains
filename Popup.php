@@ -15,7 +15,7 @@ class Popup extends PluginBase{
   public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
     switch($cmd->getName()){
      case 'popup':
-       $sender->sendPopup("Popup Message");
+       $sender->sendPopup("Popup");
     }
   }
 }
