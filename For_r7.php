@@ -7,7 +7,7 @@ public function onCommand(\pocketmine\command\CommandSender $sender, \pocketmine
 		case 'apiupdater':
 		
 		//args
-		if(isse($args[0])){
+		if(isset($args[0])){
 			switch($args[0]){
 				
 				//update all command
