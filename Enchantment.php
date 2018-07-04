@@ -6,8 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\item\Item;
-use pocketmine\item\enchantment\EnchantmentEntry;
-use pocketmine\item\enchantment\EnchantmentList;
+use pocketmine\item\enchantment\EnchantmantInstance;
 use pocketmine\item\enchantment\Enchantment;
 
 class Enchantment extends PluginBase{
@@ -20,7 +19,7 @@ class Enchantment extends PluginBase{
     switch($cmd->getName(){
       case 'sword':
       $enchantment = Enchantment::getEnchantment(ID); // replace id to the id enchant
-      $enchantment->setLevel(POWER); // replace power to Enchant Level
+      $enchantmentInstance = new EnchantmentInstance($enchantmant, POWER); // replace power to Enchant Level
       $item = $sender->getInventory()->addItem(Item::get(275, 0, 1));
       $item->addEnchantment($enchantment);
       }
